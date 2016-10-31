@@ -15,5 +15,6 @@
   "authors": [
   	{"name": "", "email": ""}
   ],
-  "active": true
+  "active": true,
+  "byod": true
 }
