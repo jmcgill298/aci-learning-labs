@@ -3,7 +3,7 @@
   "labId": "aci-toolkit",
   "title": "ACI Toolkit",
   "slug": "Learn the basics of the APIC controller and interfaces, and issue basic commands using the CLI.",
-  "time": 20,
+  "time": 30,
   "tags": [
     {"title": "Data Center"},
     {"title": "SDN"}
@@ -14,7 +14,8 @@
     {"title": "3.md"},
     {"title": "4.md"},
     {"title": "5.md"},
-    {"title": "6.md"}
+    {"title": "6.md"},
+    {"title": "7.md"}
   ],
   "authors": [
   	{"Jaocb McGill": "", "jacob@networktocode.com": ""}
