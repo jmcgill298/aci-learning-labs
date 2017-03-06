@@ -11,7 +11,10 @@
   ],
   "files": [
     {"title": "1.md"},
-    {"title": "2.md"}
+    {"title": "2.md"},
+    {"title": "3.md"},
+    {"title": "4.md"},
+    {"title": "5.md"}
   ],
   "authors": [
   	{"Jaocb McGill": "", "jacob@networktocode.com": ""}
