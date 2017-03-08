@@ -1,0 +1,20 @@
+{
+  "labId": "intro-to-aci_webarya",
+  "title": "WebArya",
+  "slug": "Leverage the Arya tool to quickly build Python scripts to program the APIC.",
+  "time": 20,
+  "tags": [
+    {"title": "Data Center"},
+    {"title": "SDN"}
+  ],
+  "files": [
+    {"title": "1.md"},
+    {"title": "2.md"},
+    {"title": "3.md"}
+    ],
+  "authors": [
+  	{"name": "Jacob McGill", "email": "jacob@networktocode.com"}
+  ],
+  "active": true,
+  "byod": false
+}

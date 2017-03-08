@@ -1,7 +1,6 @@
-
 {
-  "labId": "programmability-options",
-  "title": "Programmability Options",
+  "labId": "intro-to-aci_programmability-options",
+  "title": "ACI Programmability Options",
   "slug": "Learn the basics of the APIC controller and interfaces, and issue basic commands using the CLI.",
   "time": 25,
   "tags": [
@@ -14,8 +13,8 @@
     {"title": "3.md"}
   ],
   "authors": [
-  	{"Jaocb McGill": "", "jacob@networktocode.com": ""}
+  	{"name": "Jacob McGill", "email": "jacob@networktocode.com"}
   ],
-  "active": False,
-  "byod": False
+  "active": true,
+  "byod": false
 }

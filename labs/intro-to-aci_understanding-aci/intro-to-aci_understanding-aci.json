@@ -1,9 +1,8 @@
-
 {
-  "labId": "webarya",
-  "title": "WebArya",
+  "labId": "intro-to-aci_understanding-aci",
+  "title": "Understanding ACI",
   "slug": "Learn the basics of the APIC controller and interfaces, and issue basic commands using the CLI.",
-  "time": 20,
+  "time": 15,
   "tags": [
     {"title": "Data Center"},
     {"title": "SDN"}
@@ -11,10 +10,12 @@
   "files": [
     {"title": "1.md"},
     {"title": "2.md"},
-    {"title": "3.md"}
-  "authors": [
-  	{"Jaocb McGill": "", "jacob@networktocode.com": ""}
+    {"title": "3.md"},
+    {"title": "4.md"}
   ],
-  "active": False,
-  "byod": False
+  "authors": [
+  	{"name": "Jacob McGill", "email": "jacob@networktocode.com"}
+  ],
+  "active": true,
+  "byod": false
 }
