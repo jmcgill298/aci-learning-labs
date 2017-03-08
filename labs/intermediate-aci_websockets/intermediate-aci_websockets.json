@@ -1,0 +1,22 @@
+
+{
+  "labId": "intermediate-aci_websockets",
+  "title": "ACI Websockets",
+  "slug": "",
+  "time": 30,
+  "tags": [
+    {"title": "Data Center"},
+    {"title": "SDN"},
+    {"title": "Python"}
+    {"title": "Websockets"}
+  ],
+  "files": [
+    {"title": "1.md"},
+    {"title": "2.md"},
+    {"title": "3.md"}
+  "authors": [
+    {"name": "Jacob McGill", "email": "jacob@networktocode.com"}
+  ],
+  "active": false,
+  "byod": false
+}

@@ -1,0 +1,24 @@
+
+{
+  "labId": "intermediate-aci_mission",
+  "title": "Mision: Use Websockets to Send Notifications to Slack",
+  "slug": "",
+  "time": 25,
+  "tags": [
+    {"title": "Data Center"},
+    {"title": "SDN"},
+    {"title": "Mission"},
+    {"title": "Websockets"},
+    {"title": "Spark"}
+  ],
+  "files": [
+    {"title": "8.md"},
+    {"title": "9.md"},
+    {"title": "10.md"},
+    {"title": "11.md"}
+  "authors": [
+    {"name": "Jacob McGill", "email": "jacob@networktocode.com"}
+  ],
+  "active": false,
+  "byod": false
+}
