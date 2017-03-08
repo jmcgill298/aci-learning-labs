@@ -1,0 +1,21 @@
+
+{
+  "labId": "programmability-options",
+  "title": "Programmability Options",
+  "slug": "Learn the basics of the APIC controller and interfaces, and issue basic commands using the CLI.",
+  "time": 25,
+  "tags": [
+    {"title": "Data Center"},
+    {"title": "SDN"}
+  ],
+  "files": [
+    {"title": "1.md"},
+    {"title": "2.md"},
+    {"title": "3.md"}
+  ],
+  "authors": [
+  	{"Jaocb McGill": "", "jacob@networktocode.com": ""}
+  ],
+  "active": False,
+  "byod": False
+}

@@ -1,0 +1,24 @@
+
+{
+  "labId": "missions",
+  "title": "Intro to ACI Programmability Missions",
+  "slug": "Learn the basics of the APIC controller and interfaces, and issue basic commands using the CLI.",
+  "time": 30,
+  "tags": [
+    {"title": "Data Center"},
+    {"title": "SDN"},
+    {"title": "Mission"}
+  ],
+  "files": [
+    {"title": "1.md"},
+    {"title": "2.md"},
+    {"title": "3.md"},
+    {"title": "4.md"},
+    {"title": "5.md"}
+  ],
+  "authors": [
+  	{"Jaocb McGill": "", "jacob@networktocode.com": ""}
+  ],
+  "active": False,
+  "byod": False
+}
