@@ -1,4 +1,3 @@
-
 {
   "labId": "intermediate-aci_mission",
   "title": "Mision: Use Websockets to Send Notifications to Slack",
@@ -16,6 +15,7 @@
     {"title": "9.md"},
     {"title": "10.md"},
     {"title": "11.md"}
+  ],
   "authors": [
     {"name": "Jacob McGill", "email": "jacob@networktocode.com"}
   ],
