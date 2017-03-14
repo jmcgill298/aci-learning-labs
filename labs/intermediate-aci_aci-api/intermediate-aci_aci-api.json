@@ -1,4 +1,3 @@
-
 {
   "labId": "intermediate-aci_aci-api",
   "title": "Peeling back the ACI API",
@@ -13,6 +12,7 @@
     {"title": "1.md"},
     {"title": "2.md"},
     {"title": "3.md"}
+  ],
   "authors": [
   	{"name": "Jacob McGill", "email": "jacob@networktocode.com"}
   ],
