@@ -1,7 +1,7 @@
 {
   "labId": "intermediate-aci_aci-api",
   "title": "Peeling back the ACI API",
-  "slug": "",
+  "slug": "Investigate the ACI REST API and the tools available to easily use it.",
   "time": 30,
   "tags": [
     {"title": "Data Center"},

@@ -1,7 +1,7 @@
 {
   "labId": "intermediate-aci_websockets",
   "title": "ACI Websockets",
-  "slug": "",
+  "slug": "Learn how to link your applications to ACI with WebSockets.",
   "time": 30,
   "tags": [
     {"title": "Data Center"},

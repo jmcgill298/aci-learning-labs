@@ -1,8 +1,7 @@
-
 {
   "labId": "intermediate-aci_mission",
-  "title": "Mision: Use Websockets to Send Notifications to Slack",
-  "slug": "",
+  "title": "Mision: Use Websockets to Send Notifications to Spark",
+  "slug": "Get immediate notifications to changes in your ACI network sent to Spark!",
   "time": 20,
   "tags": [
     {"title": "Data Center"},

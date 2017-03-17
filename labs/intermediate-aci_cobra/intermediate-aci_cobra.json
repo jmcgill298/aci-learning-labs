@@ -1,7 +1,7 @@
 {
   "labId": "intermediate-aci_cobra",
   "title": "Add 'Bite' to your ACI Python Scripts with Cobra",
-  "slug": "",
+  "slug": "Create powerful Python scripts for managing ACI using the Cobra SDK.",
   "time": 25,
   "tags": [
     {"title": "Data Center"},
