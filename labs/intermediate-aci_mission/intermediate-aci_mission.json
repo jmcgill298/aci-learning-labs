@@ -23,6 +23,6 @@
   "authors": [
     {"name": "Jacob McGill", "email": "jacob@networktocode.com"}
   ],
-  "active": false,
+  "active": true,
   "byod": false
 }
