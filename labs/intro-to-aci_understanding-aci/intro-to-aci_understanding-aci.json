@@ -12,7 +12,8 @@
     {"title": "2.md"},
     {"title": "3.md"},
     {"title": "4.md"},
-    {"title": "5.md"}
+    {"title": "5.md"},
+    {"title": "6.md"}
   ],
   "authors": [
   	{"name": "Jacob McGill", "email": "jacob@networktocode.com"}
