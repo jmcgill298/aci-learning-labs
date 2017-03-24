@@ -13,22 +13,18 @@ import cobra.mit.session
 import cobra.model.fv
 import cobra.model.pol
 from cobra.internal.codec.xmlcodec import toXMLStr
-
-# login variables
-url = 'https://apic'
-login = 'admin'
-password = 'password'
+from credentials import *
 
 # configuration variables
-tenant = 'Cisco_Comics'
-bridge_domain = 'ACI_Way'
+tenant = 'Heroes'
+bridge_domain = 'Hero_Land'
 application = 'Save_The_Network'
 vlan1 = 'vlan-211'
 vlan2 = 'vlan-212'
 vlan3 = 'vlan-210'
 
 # log into an APIC and create a directory object
-ls = cobra.mit.session.LoginSession(url, login, password)
+ls = cobra.mit.session.LoginSession(URL, LOGIN, PASSWORD)
 md = cobra.mit.access.MoDirectory(ls)
 md.login()
 
