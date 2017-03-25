@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 from acitoolkit.acitoolkit import *
+from credentials import *
+
 
 def main():
-    URL = "https://apic"
-    LOGIN = "admin"
-    PASSWORD = "password"
-
     session = Session(URL, LOGIN, PASSWORD)
     session.login()
 
