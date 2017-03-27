@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h2 id="setting-up-the-environment">Setting up the environment</h2>
+<p>This tutorial will walk you through installing the acitoolkit library and its dependencies so you can follow along with the examples in this lab.</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<h4 id="git">Git</h4>
+<p>You will be performing a 'git clone' of the code from the Git Repository. There are a number of ways of achieving this. For example, an IDE, such as Eclipse, can do this for you. Otherwise, if you don't already have the command line version, you can download and install it from here:</p>
+<code>  http://git-scm.com/downloads</code>
+<h4 id="python">Python</h4>
+<p>The Python website offers two major versions of Python: 3.x.x and 2.x.x, and you will need 2.x.x for this lab. If you already have Python installed, you can check the version by simply running it from a terminal or shell:</p>
+<pre><code>  C:\Users\Cisco&gt;python
+  Python 2.7.9 (default, Dec 10 2014, 12:28:03) ...</code></pre>
+<p>Otherwise, you can download and install it from here:</p>
+<code>  https://www.python.org/downloads</code>
+<h4 id="ACI Toolkit">ACI Toolkit</h4>
+<p>You must download the the acitoolkit into a directory of your choice. This is done using the git utility installed above:</p>
+<pre><code>  C:\Users\Cisco&gt;git clone https://github.com/datacenter/acitoolkit.git</code></pre>
+<p>Next, cd into the created directory and install ACI Toolkit:</p>
+<pre><code>  C:\Users\Cisco&gt;cd acitoolkit
+  C:\Users\Cisco\acitoolkit&gt;python setup.py install</code></pre>
+<p>Note that when installing on Mac or Linux, you will likely need to run this as root so preface the command with the <code>sudo</code> keyword as follows:</p>
+<pre><code>  sudo python setup.py install</code></pre>
+<h4 id="Grpahviz">Graphviz</h4>
+<p>The ACI Toolkit has an application that requires Grpahviz to make PNG files; it can be installed from:</p>
+<code>  http://www.graphviz.org/Download.php</code>
+</body>
+</html>
