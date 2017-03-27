@@ -3,17 +3,18 @@ from app import app
 import cobra.mit.access
 import cobra.mit.request
 import cobra.mit.session
+from credentials import *
 
 
 def get_healthscore():
     session = aci_login()
 
     app_query = cobra.mit.request.DnQuery('uni/tn-SnV')
-    app_query.queryTarget = 'children'
-    app_query.classFilter = 'fvAp'
-    app_query.subtreeInclude = 'health'
+    app_query.queryTarget = SET ME
+    app_query.classFilter = SET ME
+    app_query.subtreeInclude = SET ME
 
-    apps = session.query(app_query)
+    apps = SET ME
     health_dict = {}
 
     for app in apps:
@@ -27,13 +28,13 @@ def get_faults(app_name):
     session = aci_login()
 
     fault_query = cobra.mit.request.DnQuery('uni/tn-SnV/ap-{}'.format(app_name))
-    fault_query.queryTarget = 'subtree'
-    fault_query.subtreeInclude = 'faults,no-scoped'
+    fault_query.queryTarget = SET ME
+    fault_query.subtreeInclude = SET ME
     fault_query.orderBy = 'faultInfo.severity|desc'
     fault_query.page = 0
     fault_query.pageSize = 15
 
-    faults = session.query(fault_query)
+    faults = SET ME
     faults_dict = {'faults': []}
 
     for fault in faults:
@@ -60,7 +61,7 @@ def get_faults(app_name):
 
 
 def aci_login():
-    auth = cobra.mit.session.LoginSession('https://apic', 'admin', 'password')
+    auth = cobra.mit.session.LoginSession(URL, LOGIN, PASSWORD)
     session = cobra.mit.access.MoDirectory(auth)
     session.login()
 
