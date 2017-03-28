@@ -7,16 +7,16 @@ def main():
     session = Session(URL, LOGIN, PASSWORD)
     session.login()
 
-    subscribe_to_events()
+    subscribe_to_events(session)
 
 
-def subscribe_to_events():
-    Tenant.subscribe(session)
-    AppProfile.subscribe(session)
+def subscribe_to_events(apic_session):
+    Tenant.subscribe(apic_session)
+    AppProfile.subscribe(apic_session)
     
     while True:
-        if Tenant.has_events(session):
-            event = Tenant.get_event(session)
+        if Tenant.has_events(apic_session):
+            event = Tenant.get_event(apic_session)
 
             if event.is_deleted():
                 status = "has been deleted"
@@ -25,8 +25,8 @@ def subscribe_to_events():
 
             print("\n{} {}".format(event.dn, status))
 
-        elif AppProfile.has_events(session):
-            event = AppProfile.get_event(session)
+        elif AppProfile.has_events(apic_session):
+            event = AppProfile.get_event(apic_session)
 
             if event.is_deleted():
                 status = "has been deleted"
