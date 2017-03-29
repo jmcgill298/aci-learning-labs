@@ -1,6 +1,6 @@
 {
   "labId": "intro-to-aci_webarya",
-  "title": "WebArya",
+  "title": "Creating ACI Scripts the Easy Way - WebArya",
   "slug": "Leverage the Arya tool to quickly build Python scripts to program the APIC.",
   "time": 20,
   "tags": [
