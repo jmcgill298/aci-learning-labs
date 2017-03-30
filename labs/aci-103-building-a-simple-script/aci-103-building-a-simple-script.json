@@ -1,6 +1,6 @@
 {
   "labId": "aci-103-building-a-simple-script",
-  "title": "ACI 103 – Building A Simple Script",
+  "title": "ACI 103 - Building A Simple Script",
   "slug": "Understand how to capture API calls using the API Inspector.  Save and make API calls to create various constructs in ACI.",
   "time": 45,
   "tags": [
@@ -19,5 +19,6 @@
   "authors": [
   	{"name": "", "email": ""}
   ],
-  "active": true
+  "active": true,
+  "byod": true
 }
