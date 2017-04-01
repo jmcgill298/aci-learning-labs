@@ -1,6 +1,7 @@
 import requests
 import argparse
 from acitoolkit.acitoolkit import *
+from credentials import *
 
 cli_args = argparse.ArgumentParser("Post to Spark", "Collects an Access Token to connect to Spark Chatroom")
 cli_args.add_argument('-t', '--token', required=True,
@@ -11,10 +12,6 @@ TOKEN = "Bearer {}".format(vars(args)["token"])
 
 
 def main():
-    URL = "https://apic"
-    LOGIN = "admin"
-    PASSWORD = "password"
-
     session = Session(URL, LOGIN, PASSWORD)
     session.login()
 
@@ -22,13 +19,13 @@ def main():
 
 
 def subscribe_to_events(session):
-    Tenant.subscribe(session)
-    AppProfile.subscribe(session)
-    EPG.subscribe(session)
+    ## SUBSCRIBE TO TENANT CLASS, ONLY NEW EVENTS
+    ## SUBSCRIBE TO APPLICATION PROFILE CLASS, ONLY NEW EVENTS
+    ## SUBSCRIBE TO EPG CLASS, ONLY NEW EVENTS
 
     while True:
-        if Tenant.has_events(session):
-            event = Tenant.get_event(session)
+        if ## CHECK IF TENANT SUBSCRIPTION HAS ANY EVENTS:
+            event = ## GET TENANT EVENT
             if event.is_deleted():
                 status = "has been deleted"
             else:
@@ -36,8 +33,8 @@ def subscribe_to_events(session):
 
             post_message_to_spark("{} {}".format(event.dn, status))
 
-        elif AppProfile.has_events(session):
-            event = AppProfile.get_event(session)
+        elif ## CHECK IF APPLICATION PROFILE SUBSCRIPTION HAS ANY EVENTS:
+            event = ## GET APPLICATION PROFILE EVENT
             if event.is_deleted():
                 status = "has been deleted"
             else:
@@ -45,8 +42,8 @@ def subscribe_to_events(session):
 
             post_message_to_spark("{} {}".format(event.dn, status))
 
-        elif EPG.has_events(session):
-            event = EPG.get_event(session)
+        elif ## CHECK IF EPG SUBSCRIPTION HAS ANY EVENTS:
+            event = ## GET EPG EVENT
             if event.is_deleted():
                 status = "has been deleted"
             else:
