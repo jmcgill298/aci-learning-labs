@@ -11,8 +11,10 @@ def main():
 
 
 def subscribe_to_events(apic_session):
-    Tenant.subscribe(apic_session)
-    AppProfile.subscribe(apic_session)
+    Tenant.subscribe(apic_session, only_new=True)
+    AppProfile.subscribe(apic_session, only_new=True)
+    
+    print("\nListening for Events...\n")
     
     while True:
         if Tenant.has_events(apic_session):
