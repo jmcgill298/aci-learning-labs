@@ -6,8 +6,9 @@ import cobra.mit.request
 import cobra.mit.session
 import cobra.model.fv
 import cobra.model.pol
+from credentials import *
 
-auth = cobra.mit.session.LoginSession('https://apic', 'admin', 'password')
+auth = cobra.mit.session.LoginSession(URL, LOGIN, PASSWORD)
 session = cobra.mit.access.MoDirectory(auth)
 session.login()
 
