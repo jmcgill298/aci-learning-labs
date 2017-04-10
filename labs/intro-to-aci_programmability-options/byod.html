@@ -11,7 +11,9 @@
         <li>pip</li>
       </ul>
     <li>"git" command line tools</li>
+    <li>Google Chrome + Postman</li>
     <li>ACI Toolkit</li>
+    <li>Cobra SDK</li>
   </ul>
 
   <h3>Workstation Setup Instructions</h4>
@@ -119,6 +121,15 @@ pip install virtualenv
 
   </ul>
 
+<h3>Install Postman</h3>
+  <p>
+    This lab uses Postman to make API calls; if you do
+    not have it installed, it can be downloaded from:
+    <ul>
+      <li>https://www.getpostman.com/apps</li>
+    </ul>
+  </p>
+
 <h3>Setup a virtual envirnment</h3>
   <p>
     A virtual environment is recommended to provide an
@@ -158,13 +169,28 @@ cd acitoolkit
 python setup.py install
   </pre>
 
-<h3>Install GraphvizK</h3>
+<h3>Install Cobra SDK</h3>
 <p>
-  The ACI Toolkit has an application that requires Grpahviz to make PNG files; it can be installed from:
+  The Cobra SDK files must be downloaded from a physical APIC appliance.
+  Browse to the APIC address and download both Python 2.7 egg files:
   <ul>
-    <li>http://www.graphviz.org/Download.php</li>
+    <li>https://[APIC Address]/cobra/_downloads/</li>
+    <li>acicobra-[apic_version]-py2.7.egg</li>
+    <li>acimodel-[apic_version]-py2.7.egg</li>
   </ul>
 </p>
+<h4>Mac or Linux</h4>
+  <pre>
+# From your Downloads Dirctory
+sudo easy_install -Z acicobra-[apic_version]-py2.7.egg
+sudo easy_install -Z acimodel-[apic_version]-py2.7.egg
+  </pre>
+<h4>Windows</h4>
+  <pre>
+# From your Downloads Dirctory
+easy_install -Z acicobra-[apic_version]-py2.7.egg
+easy_install -Z acimodel-[apic_version]-py2.7.egg
+  </pre>
 
 <h3>Pull Down and Prep Sample Code Repository</h3>
   <p>
@@ -174,7 +200,7 @@ python setup.py install
   </p>  
 <h4>Mac or Linux</h4>
   <pre>
-# From your working directory
+#From your working directory
 git clone https://github.com/CiscoDevNet/intro-to-aci_sample-code
 cd intro-to-aci_sample-code
 sudo pip install -r requirements.txt

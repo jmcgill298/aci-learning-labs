@@ -11,7 +11,8 @@
         <li>pip</li>
       </ul>
     <li>"git" command line tools</li>
-    <li>ACI Toolkit</li>
+    <li>Cobra SDK</li>
+    <li>WebArya</li>
   </ul>
 
   <h3>Workstation Setup Instructions</h4>
@@ -137,34 +138,48 @@ virtualenv aci
 aci\Scripts\activate
   </pre>
 
-<h3>Install ACI Toolkit</h3>
-  <p>
-    Once you have activated your virtual environment,
-    you can proceed to install the rest of the python
-    packages. ACI Toolkit is installed using git.
-  </p>
+<h3>Install Cobra SDK</h3>
+<p>
+  The Cobra SDK files must be downloaded from a physical APIC appliance.
+  Browse to the APIC address and download both Python 2.7 egg files:
+  <ul>
+    <li>https://[APIC Address]/cobra/_downloads/</li>
+    <li>acicobra-[apic_version]-py2.7.egg</li>
+    <li>acimodel-[apic_version]-py2.7.egg</li>
+  </ul>
+</p>
 <h4>Mac or Linux</h4>
   <pre>
-# From your working directory
-git clone https://github.com/datacenter/acitoolkit.git
-cd acitoolkit
-sudo python setup.py install
+# From Downloads Dirctory
+sudo easy_install -Z acicobra-[apic_version]-py2.7.egg
+sudo easy_install -Z acimodel-[apic_version]-py2.7.egg
   </pre>
 <h4>Windows</h4>
   <pre>
-# From your working directory
-git clone https://github.com/datacenter/acitoolkit.git
-cd acitoolkit
-python setup.py install
+# From Downloads Dirctory
+easy_install -Z acicobra-[apic_version]-py2.7.egg
+easy_install -Z acimodel-[apic_version]-py2.7.egg
   </pre>
 
-<h3>Install GraphvizK</h3>
-<p>
-  The ACI Toolkit has an application that requires Grpahviz to make PNG files; it can be installed from:
-  <ul>
-    <li>http://www.graphviz.org/Download.php</li>
-  </ul>
-</p>
+<h3>Install WebArya</h3>
+  <p>
+    WebArya can be downloaded using git:
+  </p>
+<h4>Mac or Linux</h4>
+  <pre>
+# From within the code-samples directory
+git clone https://github.com/datacenter/webarya.git
+cd webarya
+sudo pip install -r requirements.txt
+  </pre>
+
+<h4>Windows</h4>
+  <pre>
+#From your working directory
+git clone https://github.com/datacenter/webarya.git
+cd webarya
+pip install -r requirements.txt
+  </pre>
 
 <h3>Pull Down and Prep Sample Code Repository</h3>
   <p>

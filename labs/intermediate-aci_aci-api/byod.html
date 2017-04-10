@@ -11,7 +11,7 @@
         <li>pip</li>
       </ul>
     <li>"git" command line tools</li>
-    <li>ACI Toolkit</li>
+    <li>Google Chrome + Postman</li>
   </ul>
 
   <h3>Workstation Setup Instructions</h4>
@@ -119,6 +119,15 @@ pip install virtualenv
 
   </ul>
 
+<h3>Install Postman</h3>
+  <p>
+    This lab uses Postman to make API calls; if you do
+    not have it installed, it can be downloaded from:
+    <ul>
+      <li>https://www.getpostman.com/apps</li>
+    </ul>
+  </p>
+
 <h3>Setup a virtual envirnment</h3>
   <p>
     A virtual environment is recommended to provide an
@@ -137,35 +146,6 @@ virtualenv aci
 aci\Scripts\activate
   </pre>
 
-<h3>Install ACI Toolkit</h3>
-  <p>
-    Once you have activated your virtual environment,
-    you can proceed to install the rest of the python
-    packages. ACI Toolkit is installed using git.
-  </p>
-<h4>Mac or Linux</h4>
-  <pre>
-# From your working directory
-git clone https://github.com/datacenter/acitoolkit.git
-cd acitoolkit
-sudo python setup.py install
-  </pre>
-<h4>Windows</h4>
-  <pre>
-# From your working directory
-git clone https://github.com/datacenter/acitoolkit.git
-cd acitoolkit
-python setup.py install
-  </pre>
-
-<h3>Install GraphvizK</h3>
-<p>
-  The ACI Toolkit has an application that requires Grpahviz to make PNG files; it can be installed from:
-  <ul>
-    <li>http://www.graphviz.org/Download.php</li>
-  </ul>
-</p>
-
 <h3>Pull Down and Prep Sample Code Repository</h3>
   <p>
     Once all the pre-reqs are installed on your workstation, all you need 
@@ -174,7 +154,7 @@ python setup.py install
   </p>  
 <h4>Mac or Linux</h4>
   <pre>
-# From your working directory
+#From your working directory
 git clone https://github.com/CiscoDevNet/intro-to-aci_sample-code
 cd intro-to-aci_sample-code
 sudo pip install -r requirements.txt
